@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.8.0" EngineVersion="4.8" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="3.1.0"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+    <Property LongName="Engine.fastForwardThreshold" Type="1">2000</Property>
+    <Property LongName="Engine.fastRewindThreshold" Type="1">-2000</Property>
+    <Property LongName="Engine.priorityClass" Type="4"><![CDATA[3|0|Shared Time|Preemptive|Auto]]></Property>
+    <Property LongName="Engine.posixTimerThread" Type="4"><![CDATA[3|0|Auto|Timer Interval|Real Time Clock]]></Property>
+    <Property LongName="Engine.posixRealTimeClockIrqFrequency" Type="4"><![CDATA[4|0|1024|2048|4096|8192]]></Property>
+    <Property LongName="Engine.posixPreemptiveSchedulingPolicy" Type="4"><![CDATA[2|0|FIFO|Round Robin]]></Property>
+    <Property LongName="Engine.windowsUsePerformanceCounter" Type="0">true</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="Conv2IplImage_1" Model="Conv2IplImage" Version="4.0.2" x="776" y="328" z="0">
+    <Input LongName="Conv2IplImage_1.input" Name="input">
+      <Property LongName="Conv2IplImage_1.input.readerType" Type="1">0</Property>
+      <Property LongName="Conv2IplImage_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="Conv2IplImage_1.output" Name="output">
+      <Property LongName="Conv2IplImage_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Conv2IplImage_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Conv2IplImage_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Conv2IplImage_1.threaded" Type="0">false</Property>
+    <Property LongName="Conv2IplImage_1.priority" Type="1">128</Property>
+    <Property LongName="Conv2IplImage_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.0.1" x="264" y="152" z="0">
+    <Input LongName="DataViewer_1.input_0" Name="input_0">
+      <Property LongName="DataViewer_1.input_0.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_1.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_1.input_1" Name="input_1">
+      <Property LongName="DataViewer_1.input_1.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_1.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_1.run" Type="0">true</Property>
+    <Property LongName="DataViewer_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_1.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_1.x" Type="1">1423</Property>
+    <Property LongName="DataViewer_1.y" Type="1">188</Property>
+    <Property LongName="DataViewer_1.width" Type="1">315</Property>
+    <Property LongName="DataViewer_1.height" Type="1">240</Property>
+    <Property LongName="DataViewer_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.nbInputs" Type="1">2</Property>
+    <Property LongName="DataViewer_1.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_1.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_1.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_1.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_1.internalState" Type="3" SubType="128"><![CDATA[100;205]]></Property>
+    <Property LongName="DataViewer_1.expandedState" Type="3" SubType="128"><![CDATA[0|;0|]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_1.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_1.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="DataViewer_1_1" Model="DataViewer" Version="2.0.1" x="688" y="232" z="0">
+    <Input LongName="DataViewer_1_1.input_0" Name="input_0">
+      <Property LongName="DataViewer_1_1.input_0.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_1_1.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_1_1.input_1" Name="input_1">
+      <Property LongName="DataViewer_1_1.input_1.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_1_1.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_1_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1_1.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.run" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_1_1.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_1_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_1_1.x" Type="1">1024</Property>
+    <Property LongName="DataViewer_1_1.y" Type="1">139</Property>
+    <Property LongName="DataViewer_1_1.width" Type="1">315</Property>
+    <Property LongName="DataViewer_1_1.height" Type="1">240</Property>
+    <Property LongName="DataViewer_1_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_1_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1_1.nbInputs" Type="1">2</Property>
+    <Property LongName="DataViewer_1_1.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_1_1.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1_1.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1_1.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1_1.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1_1.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_1_1.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_1_1.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1_1.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1_1.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_1_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_1_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_1_1.internalState" Type="3" SubType="128"><![CDATA[100;205]]></Property>
+    <Property LongName="DataViewer_1_1.expandedState" Type="3" SubType="128"><![CDATA[0|;0|]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_1_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_1_1.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_1_1.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="ImageViewer_1" Model="ImageViewer" Version="1.23.2" x="976" y="320" z="0">
+    <Input LongName="ImageViewer_1.input" Name="input">
+      <Property LongName="ImageViewer_1.input.readerType" Type="1">2</Property>
+      <Property LongName="ImageViewer_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="ImageViewer_1.oMouseClick" Name="oMouseClick">
+      <Property LongName="ImageViewer_1.oMouseClick.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_1.oMouseClick.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_1.oMouseClick.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="ImageViewer_1.oROI" Name="oROI">
+      <Property LongName="ImageViewer_1.oROI.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_1.oROI.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_1.oROI.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="ImageViewer_1.oWindowEvent" Name="oWindowEvent">
+      <Property LongName="ImageViewer_1.oWindowEvent.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_1.oWindowEvent.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_1.oWindowEvent.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="ImageViewer_1.left" Type="1">2218</Property>
+    <Property LongName="ImageViewer_1.top" Type="1">174</Property>
+    <Property LongName="ImageViewer_1.width" Type="1">1280</Property>
+    <Property LongName="ImageViewer_1.height" Type="1">675</Property>
+    <Property LongName="ImageViewer_1.autoResize" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.fullscreen" Type="0">false</Property>
+    <Property LongName="ImageViewer_1.monitorForFullscreen" Type="1">1</Property>
+    <Property LongName="ImageViewer_1.displayTitleBar" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.displayBorder" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.engine" Type="4"><![CDATA[4|2|Direct Show|GDI|OpenGL|Direct Show (VMR 7)]]></Property>
+    <Property LongName="ImageViewer_1.keepAspectRatio" Type="0">false</Property>
+    <Property LongName="ImageViewer_1.imageAspect" Type="4"><![CDATA[3|0|Anamorphic|Letterbox|Pan And Scan]]></Property>
+    <Property LongName="ImageViewer_1.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
+    <Property LongName="ImageViewer_1.sequentialRender" Type="0">false</Property>
+    <Property LongName="ImageViewer_1.verbose" Type="0">false</Property>
+    <Property LongName="ImageViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.priority" Type="1">128</Property>
+    <Property LongName="ImageViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="PythonBridge_1" Model="PythonBridge" Version="3.1.0" x="352" y="400" z="0">
+    <Output LongName="PythonBridge_1.images" Name="images">
+      <Property LongName="PythonBridge_1.images.subsampling" Type="1">1</Property>
+      <Property LongName="PythonBridge_1.images.fifosize" Type="1">16</Property>
+      <Property LongName="PythonBridge_1.images.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="PythonBridge_1.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="PythonBridge_1.internalInputs" Type="3" SubType="128"><![CDATA[]]></Property>
+    <Property LongName="PythonBridge_1.internalOutputs" Type="3" SubType="128"><![CDATA[images;18==;0]]></Property>
+    <Property LongName="PythonBridge_1.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="PythonBridge_1.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="PythonBridge_1.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="PythonBridge_1.logDebug" Type="0">false</Property>
+    <Property LongName="PythonBridge_1.showTracebackInConsole" Type="0">true</Property>
+    <Property LongName="PythonBridge_1.autoReloadSubModules" Type="0">true</Property>
+    <Property LongName="PythonBridge_1.memorySize" Type="1">10000000</Property>
+    <ReadOnlyProperty LongName="PythonBridge_1.pythonPID" Type="1">2712</ReadOnlyProperty>
+    <Property LongName="PythonBridge_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="PythonBridge_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PythonBridge_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="PythonBridge_1.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Users/broyer/AppData/Local/Programs/Python/Python36/]]></Property>
+    <Property LongName="PythonBridge_1.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/broyer/RTMaps-4.0/python_log/]]></Property>
+    <Property LongName="PythonBridge_1.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="PythonBridge_1.pythonFilename" Type="3" SubType="80"><![CDATA[D:/Dev/RTMaps/save/rtmaps_stream.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/rtmaps_stream.py]]></Relative></Property>
+    <Property LongName="PythonBridge_1.readingPolicy" Type="4"><![CDATA[5|2|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
+    <Property LongName="PythonBridge_1.samplingPeriod" Type="1" SubType="1">40000</Property>
+    <ReadOnlyProperty LongName="PythonBridge_1.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PythonBridge_1.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PythonBridge_1.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="PythonBridge_1.threaded" Type="0">true</Property>
+    <Property LongName="PythonBridge_1.priority" Type="1">128</Property>
+    <Property LongName="PythonBridge_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="RandomImage_1" Model="RandomImage" Version="3.4" x="864" y="216" z="0">
+    <Output LongName="RandomImage_1.outputIplImage" Name="outputIplImage">
+      <Property LongName="RandomImage_1.outputIplImage.subsampling" Type="1">1</Property>
+      <Property LongName="RandomImage_1.outputIplImage.fifosize" Type="1">16</Property>
+      <Property LongName="RandomImage_1.outputIplImage.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="RandomImage_1.sizeX" Type="1">384</Property>
+    <Property LongName="RandomImage_1.sizeY" Type="1">288</Property>
+    <Property LongName="RandomImage_1.format" Type="4"><![CDATA[13|0|GRAY|BGR24|RGB24|YUV|YUYV|VYUY|UYVY|YUV422|YUV420|YUV411|BGRA|RGBA|YUVA]]></Property>
+    <Property LongName="RandomImage_1.period" Type="1">200000</Property>
+    <Property LongName="RandomImage_1.nbHorBlocks" Type="1">2</Property>
+    <Property LongName="RandomImage_1.nbVerBlocks" Type="1">2</Property>
+    <Property LongName="RandomImage_1.depth" Type="4"><![CDATA[2|0|8 bpp|16 bpp]]></Property>
+    <Property LongName="RandomImage_1.threaded" Type="0">true</Property>
+    <Property LongName="RandomImage_1.priority" Type="1">128</Property>
+    <Property LongName="RandomImage_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="RecFile_1" Model="RecFile" Version="2.16.0" x="656" y="464" z="0">
+    <Input LongName="RecFile_1.PythonBridge_1.images.input" Name="input">
+      <Property LongName="RecFile_1.PythonBridge_1.images.input.readerType" Type="1">0</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.input.subsampling" Type="1">1</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.trigger" Type="0">true</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.triggerAtStart" Type="4"><![CDATA[3|0|Do not change|True|False]]></Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.triggerBufferTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.triggerBufferSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.triggerReleaseTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.triggerReleaseSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.recordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.alias" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.record_to_subfolder" Type="0">false</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.subfolder_relative_path" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.useTimestamp" Type="0">false</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.threaded" Type="0">true</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.priority" Type="1">128</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.video_format" Type="4"><![CDATA[138|11|a64 - video for Commodore 64|raw AC-3|ADTS AAC (Advanced Audio Coding)|CRI ADX|Audio IFF|3GPP AMR|ASF (Advanced / Active Streaming Format)|SSA (SubStation Alpha) subtitle|AST (Audio Stream)|ASF (Advanced / Active Streaming Format)|Sun AU|AVI (Audio Video Interleaved)|SWF (ShockWave Flash) (AVM2)|G.729 BIT file format|Apple CAF (Core Audio Format)|raw Chinese AVS (Audio Video Standard) video|CRC testing|DASH Muxer|raw data|D-Cinema audio|raw Dirac|raw DNxHD (SMPTE VC-3)|raw DTS|DV (Digital Video)|raw E-AC-3|F4V Adobe Flash Video|FFM (FFserver live feed)|FFmpeg metadata in text|Adobe Filmstrip|raw FLAC|FLV (Flash Video)|framecrc testing|Per-frame MD5 testing|raw G.722|raw G.723.1|GIF Animation|GXF (General eXchange Format)|raw H.261|raw H.263|raw H.264 video|HDS Muxer|raw HEVC video|Apple HTTP Live Streaming|Microsoft Windows ICO|iLBC storage|image2 sequence|piped image2 sequence|iPod H.264 MP4 (MPEG-4 Part 14)|Berkeley/IRCAM/CARL Sound Format|ISMV/ISMA (Smooth Streaming)|On2 IVF|JACOsub subtitle format|LOAS/LATM|LRC lyrics|raw MPEG-4 video|MD5 testing|Matroska|Matroska Audio|MicroDVD subtitle format|raw MJPEG video|raw MLP|Yamaha SMAF|QuickTime / MOV|MP2 (MPEG audio layer 2)|MP3 (MPEG audio layer 3)|MP4 (MPEG-4 Part 14)|MPEG-1 Systems / MPEG program stream|MPEG-1 Systems / MPEG program stream (VCD)|raw MPEG-1 video|MPEG-2 PS (DVD VOB)|MPEG-2 PS (SVCD)|raw MPEG-2 video|MPEG-2 PS (VOB)|MPEG-TS (MPEG-2 Transport Stream)|MIME multipart JPEG|MXF (Material eXchange Format)|MXF (Material eXchange Format) D-10 Mapping|raw null video|NUT|Ogg Audio|Ogg|Sony OpenMG audio|Ogg Opus|PCM A-law|PCM mu-law|PCM 64-bit floating-point big-endian|PCM 64-bit floating-point little-endian|PCM 32-bit floating-point big-endian|PCM 32-bit floating-point little-endian|PCM signed 32-bit big-endian|PCM signed 32-bit little-endian|PCM signed 24-bit big-endian|PCM signed 24-bit little-endian|PCM signed 16-bit big-endian|PCM signed 16-bit little-endian|PCM signed 8-bit|PCM unsigned 32-bit big-endian|PCM unsigned 32-bit little-endian|PCM unsigned 24-bit big-endian|PCM unsigned 24-bit little-endian|PCM unsigned 16-bit big-endian|PCM unsigned 16-bit little-endian|PCM unsigned 8-bit|PSP MP4 (MPEG-4 Part 14)|raw video|RealMedia|raw id RoQ|Lego Mindstorms RSO|RTP output|RTSP output|SAP output|segment|streaming segment muxer|Loki SDL MJPEG|Smooth Streaming Muxer|SoX native|Ogg Speex|IEC 61937 (used on S/PDIF - IEC958)|SubRip subtitle|SWF (ShockWave Flash)|Multiple muxer tee|3GP2 (3GPP2 file format)|3GP (3GPP file format)|extract pts as timecode v2 format, as defined by mkvtoolnix|raw TrueHD|uncoded framecrc testing|raw VC-1 video|VC-1 test bitstream|Creative Voice|Sony Wave64|WAV / WAVE (Waveform Audio)|WebM|WebM DASH Manifest|WebP|WebVTT subtitle|Windows Television (WTV)|raw WavPack|YUV4MPEG pipe]]></Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.show_all_codecs" Type="0">false</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.video_stream_copy" Type="0">false</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.video_codec" Type="4"><![CDATA[9|1|h263p|mjpeg|jpegls|mpeg1video|mpeg2video|mpeg4|msmpeg4v2|msmpeg4|rawvideo]]></Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.video_vbr_qual" Type="0">true</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.video_quality" Type="1">75</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.video_bitrate" Type="1">400000</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.auto_framerate" Type="0">true</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.estimated_framerate" Type="1">30</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.estimated_framerate_divisor" Type="1">1</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.override_width" Type="1">0</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.override_height" Type="1">0</Property>
+      <Property LongName="RecFile_1.PythonBridge_1.images.format_compatibility" Type="4"><![CDATA[2|1|Version 1|Version 2]]></Property>
+    </Input>
+    <Property LongName="RecFile_1.path" Type="3" SubType="32"><![CDATA[C:/Users/broyer/Documents/]]></Property>
+    <ReadOnlyProperty LongName="RecFile_1.recordPath" Type="3"><![CDATA[]]></ReadOnlyProperty>
+    <Property LongName="RecFile_1.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+    <Property LongName="RecFile_1.comments" Type="3"><![CDATA[]]></Property>
+    <Property LongName="RecFile_1.blackbox" Type="1" SubType="128">0</Property>
+    <Property LongName="RecFile_1.record_buffer_delay" Type="1">1000000</Property>
+    <Property LongName="RecFile_1.delay" Type="1" SubType="128">0</Property>
+    <Property LongName="RecFile_1.createFolder" Type="0">true</Property>
+    <Property LongName="RecFile_1.record_to_subfolders" Type="0">false</Property>
+    <Property LongName="RecFile_1.add_record_start_time_to_folder_and_file_names" Type="0">false</Property>
+    <Property LongName="RecFile_1.allow_record_overwrite" Type="0">false</Property>
+    <ReadOnlyProperty LongName="RecFile_1.record_start_time" Type="3"><![CDATA[20200806_135729615000]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="RecFile_1.triggered_record_methods" Type="3"><![CDATA[PythonBridge_1.images]]></ReadOnlyProperty>
+    <Property LongName="RecFile_1.threaded" Type="0">false</Property>
+    <Property LongName="RecFile_1.priority" Type="1">128</Property>
+    <Property LongName="RecFile_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="RTSP_client_1" Model="RTSP_client" Version="1.24.0" x="464" y="144" z="0">
+    <Property LongName="RTSP_client_1.remoteServer" Type="3"><![CDATA[rtsp://localhost:8554/]]></Property>
+    <Property LongName="RTSP_client_1.username" Type="3"><![CDATA[]]></Property>
+    <Property LongName="RTSP_client_1.password" Type="3"><![CDATA[]]></Property>
+    <Property LongName="RTSP_client_1.desiredPortNum" Type="1">8554</Property>
+    <Property LongName="RTSP_client_1.RTPoffsetArg" Type="1">-1</Property>
+    <Property LongName="RTSP_client_1.streamUsingTCP" Type="0">false</Property>
+    <Property LongName="RTSP_client_1.socketInputBufferSize" Type="1">0</Property>
+    <Property LongName="RTSP_client_1.packetReorderingThreshold" Type="1">100000</Property>
+    <Property LongName="RTSP_client_1.RTSPkeepAlive" Type="0">true</Property>
+    <Property LongName="RTSP_client_1.verbose" Type="0">false</Property>
+    <Property LongName="RTSP_client_1.probeTimeoutSDP" Type="1" SubType="1">5000000</Property>
+    <Property LongName="RTSP_client_1.runTimeoutSDP" Type="1" SubType="1">5000000</Property>
+    <Property LongName="RTSP_client_1.maxJitter" Type="1" SubType="1">0</Property>
+    <Property LongName="RTSP_client_1.tOffset" Type="1" SubType="1">0</Property>
+    <Property LongName="RTSP_client_1.autoConnect" Type="0">true</Property>
+    <Property LongName="RTSP_client_1.nbStreams" Type="1" SubType="128">0</Property>
+    <Property LongName="RTSP_client_1.threaded" Type="0">true</Property>
+    <Property LongName="RTSP_client_1.priority" Type="1">128</Property>
+    <Property LongName="RTSP_client_1.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="SocketReceiver_1" Model="SocketReceiver" Version="2.21.0" x="144" y="312" z="0">
+    <Output LongName="SocketReceiver_1.output0" Name="output0">
+      <Property LongName="SocketReceiver_1.output0.subsampling" Type="1">1</Property>
+      <Property LongName="SocketReceiver_1.output0.fifosize" Type="1">16</Property>
+      <Property LongName="SocketReceiver_1.output0.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="SocketReceiver_1.Type" Type="4"><![CDATA[3|0|TCP|UDP|Multicast]]></Property>
+    <Property LongName="SocketReceiver_1.Port" Type="1">5555</Property>
+    <Property LongName="SocketReceiver_1.listenIP" Type="3"><![CDATA[127.0.0.1]]></Property>
+    <Property LongName="SocketReceiver_1.Family" Type="4"><![CDATA[2|0|IPv4|IPv6]]></Property>
+    <ReadOnlyProperty LongName="SocketReceiver_1.senderIP" Type="3"><![CDATA[0.0.0.0]]></ReadOnlyProperty>
+    <Property LongName="SocketReceiver_1.ReuseAddr" Type="0">false</Property>
+    <Property LongName="SocketReceiver_1.nbOutputs" Type="1">1</Property>
+    <Property LongName="SocketReceiver_1.channelsOrder" Type="3"><![CDATA[]]></Property>
+    <Property LongName="SocketReceiver_1.Verbose" Type="0">false</Property>
+    <Property LongName="SocketReceiver_1.connectionStatusOutput" Type="0">false</Property>
+    <Property LongName="SocketReceiver_1.reconnectTimeout" Type="1" SubType="1">0</Property>
+    <Property LongName="SocketReceiver_1.createRetryPeriod" Type="1" SubType="1">1000000</Property>
+    <Property LongName="SocketReceiver_1.output_0_name" Type="3"><![CDATA[]]></Property>
+    <Property LongName="SocketReceiver_1.threaded" Type="0">true</Property>
+    <Property LongName="SocketReceiver_1.priority" Type="1">128</Property>
+    <Property LongName="SocketReceiver_1.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="TCPClient_1" Model="TCPClient" Version="2.0.3" x="464" y="248" z="0">
+    <Input LongName="TCPClient_1.input" Name="input">
+      <Property LongName="TCPClient_1.input.readerType" Type="1">0</Property>
+      <Property LongName="TCPClient_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="TCPClient_1.output" Name="output">
+      <Property LongName="TCPClient_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="TCPClient_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="TCPClient_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="TCPClient_1.Port" Type="1">5555</Property>
+    <Property LongName="TCPClient_1.DestinationIP" Type="3"><![CDATA[127.0.0.1]]></Property>
+    <Property LongName="TCPClient_1.ConnectTimeout" Type="1">3000000</Property>
+    <Property LongName="TCPClient_1.NbConnectionAttempts" Type="1">0</Property>
+    <Property LongName="TCPClient_1.EnableSend" Type="0">true</Property>
+    <Property LongName="TCPClient_1.EnableRecv" Type="0">true</Property>
+    <Property LongName="TCPClient_1.RecvTimeout" Type="1">10000</Property>
+    <Property LongName="TCPClient_1.RecvMaxMsgSize" Type="1">65507</Property>
+    <Property LongName="TCPClient_1.TcpNoDelay" Type="0">true</Property>
+    <Property LongName="TCPClient_1.Verbose" Type="0">false</Property>
+    <Property LongName="TCPClient_1.threaded" Type="0">true</Property>
+    <Property LongName="TCPClient_1.priority" Type="1">128</Property>
+    <Property LongName="TCPClient_1.autoStart" Type="0">false</Property>
+  </Component>
+  <Connection Output="SocketReceiver_1.output0" Input="DataViewer_1.input_0"/>
+  <Connection Output="PythonBridge_1.images" Input="ImageViewer_1.input"/>
+  <Connection Input="RecFile_1.PythonBridge_1.images.input" Output="PythonBridge_1.images">
+    <Record Method="video_file" neverskipping="false" useTimestamp="false"/>
+  </Connection>
+  <RTBoardView ID="JavaStudio1.0">
+    <ComponentBox InstanceName="DataViewer_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_1" color="0"/>
+    <ConnectionShape InstanceName="ImageViewer_1.input" color="0"/>
+    <ConnectionShape InstanceName="RecFile_1.PythonBridge_1.images.input" color="0"/>
+    <ConnectionShape InstanceName="TextViewer_1.input" color="0"/>
+    <ConnectionShape InstanceName="TextViewer_2.input" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>
